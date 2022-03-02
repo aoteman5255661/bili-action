@@ -26,7 +26,8 @@ jobs:
       env:
         UID: ${{ secrets.UID }}
       id: step1
-      run: echo "::set-output name=out::$(python main.py)"
+      run: |
+        echo "::set-output name=out::$(python main.py)"
 #    - name: Print
 #      run: |
 #        echo "::set-output name=bool::$value"
