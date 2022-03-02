@@ -25,9 +25,11 @@ jobs:
     - name: test
       env:
         UID: ${{ secrets.UID }}
-      run:  echo python main.py
+      id: step1
+      run:  "::set-output name=out::$(python main.py)"
 #    - name: Print
-#      run: echo "${{ out }}"
+#      run: |
+#        echo "::set-output name=bool::$value"
 #    - name: Install dependencies
 #      run: |
 #        python -m pip install --upgrade pip
