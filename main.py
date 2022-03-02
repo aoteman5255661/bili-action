@@ -11,7 +11,7 @@ import os
 
 # 按间距中的绿色按钮以运行脚本。
 if __name__ == '__main__':
-    uid = os.getenv("uid")
+    uid = os.getenv("UID")
     print(uid)
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
