@@ -29,6 +29,7 @@ jobs:
       run: |  
         echo "$( python main.py )"
         echo "${{ secrets.UID }}"
+        echo "${{ secrets.asd }}"
 #        echo "::set-output name=$( python main.py )"
 
 #    - name: Set selected color
