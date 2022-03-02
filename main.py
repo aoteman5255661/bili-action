@@ -13,5 +13,6 @@ import os
 if __name__ == '__main__':
     uid = os.getenv("UID")
     print(uid)
+    print("kkkkk")
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
