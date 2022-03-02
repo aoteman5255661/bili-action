@@ -26,9 +26,9 @@ jobs:
       env:
         UID: ${{ secrets.UID }}
       id: step1
-      run: |
+      run: echo "$( python main.py )"
 #        echo "::set-output name=$( python main.py )"
-        echo "$( python main.py )"
+
 #    - name: Set selected color
 #      run: echo '::set-output name=SELECTED_COLOR::green'
 #      id: random-color-generator
