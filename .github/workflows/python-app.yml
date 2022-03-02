@@ -27,7 +27,14 @@ jobs:
         UID: ${{ secrets.UID }}
       id: step1
       run: |
-        echo "::set-output name=out::$(python main.py)"
+        echo "::set-output name=${{ python main.py }}"
+#    - name: Set selected color
+#      run: echo '::set-output name=SELECTED_COLOR::green'
+#      id: random-color-generator
+#    - name: Get color
+#      run: echo "The selected color is ${{ steps.random-color-generator.outputs.SELECTED_COLOR }}"
+
+
 #    - name: Print
 #      run: |
 #        echo "::set-output name=bool::$value"
